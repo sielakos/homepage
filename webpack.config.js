@@ -3,8 +3,8 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    app: './src/index.tsx',
-    vendor: ['redux', 'react', 'react-dom', 'react-redux']
+    app: './src/client/index.tsx',
+    vendor: ['redux', 'react', 'react-dom', 'react-redux', 'react-router']
   },
   output: {
     filename: '[name].js',

@@ -1,9 +1,8 @@
 import * as React from 'react';
 import {render} from 'react-dom';
+import {Routes} from './components/routes';
 
 render(
-  <div>
-    Alina ma kota
-  </div>,
+  <Routes />,
   document.getElementById('app')
 );
