@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node_modules/.bin/karma start",
     "install": "node_modules/.bin/typings install",
     "build": "node_modules/.bin/webpack",
     "serve": "node_modules/.bin/webpack-dev-server"
@@ -20,6 +20,15 @@
   },
   "homepage": "https://github.com/sielakos/homepage#readme",
   "devDependencies": {
+    "enzyme": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "json-loader": "^0.5.4",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "react-addons-test-utils": "^15.2.1",
     "source-map-loader": "^0.1.5",
     "ts-loader": "^0.8.2",
     "typescript": "^1.8.10",

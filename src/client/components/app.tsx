@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {NavBar} from '../modules/navigation';
 
-export function App({params, children}) {
+export function App({children}) {
   return (<div>
     <NavBar />
     {children}

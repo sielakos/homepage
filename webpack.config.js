@@ -3,7 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    app: './src/client/index.tsx',
+    app: './src/client/render.tsx',
     vendor: ['redux', 'react', 'react-dom', 'react-redux', 'react-router']
   },
   output: {
@@ -12,7 +12,7 @@ module.exports = {
     path: './dist'
   },
   resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js']
+    extensions: ['', '.webpack.js', '.web.js', '.ts', '.tsx', '.js', '.json']
   },
   module: {
     loaders: [
@@ -23,6 +23,10 @@ module.exports = {
       {
         test: /\.css$/,
         loader: "style-loader!css-loader"
+      },
+      {
+        test: /\.json$/,
+        loader: 'json'
       }
     ],
     preLoaders: [
@@ -38,5 +42,8 @@ module.exports = {
   devServer: {
     inline: true,
     historyApiFallback: true
+  },
+  node: {
+    __filename: true
   }
 };

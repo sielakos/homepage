@@ -9,6 +9,6 @@
   },
   "files": [
     "./typings/index.d.ts",
-    "./src/client/index.tsx"
+    "./src/client/index.ts"
   ]
 }
